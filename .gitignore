@@ -1,0 +1,24 @@
+# Gradle
+build/
+.gradle/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# CI generated files
+releaseNotes.txt
+
+#Ignore OSX Noise
+.DS_Store
+
+# IDEA/Android Studio ignores
+*.iml
+*.ipr
+*.iwss
+
+**/.idea
+!*/.idea/codeStyles
+!*/.idea/vcs.xml
+!*/.idea/runConfigurations.xml
+
+/captures

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/error_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="@+id/error_state_secondary_text"
+    app:layout_constraintTop_toBottomOf="@+id/error_state_secondary_text">
+
+    <ImageView
+        android:id="@+id/error_state_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Error Icon"
+        android:padding="16dp"
+        android:src="@drawable/ic_generic_alert_80_64"
+        android:tint="@color/medium_gray"
+        app:layout_constraintBottom_toTopOf="@+id/error_state_primary_text"
+        app:layout_constraintEnd_toStartOf="@+id/error_state_guideline_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/error_state_guideline_left"/>
+
+    <TextView
+        android:id="@+id/error_state_primary_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Oops!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/error_state_guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/error_state_guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/PartialState.PrimaryText"/>
+
+    <TextView
+        android:id="@+id/error_state_secondary_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Looks like this screen had some trouble loading."
+        app:layout_constraintEnd_toStartOf="@+id/error_state_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/error_state_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/error_state_primary_text"
+        style="@style/PartialState.SecondaryText"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/error_state_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN"
+        app:layout_constraintEnd_toStartOf="@+id/error_state_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/error_state_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/error_state_secondary_text"
+        style="@style/Button.Borderless"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/error_state_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/error_state_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"/>
+
+</android.support.constraint.ConstraintLayout>

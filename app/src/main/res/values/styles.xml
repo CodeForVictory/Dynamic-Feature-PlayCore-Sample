@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Base.Button.Colored" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:foreground">@color/transparent</item>
+    </style>
+
+    <style name="Button.Borderless" parent="Base.Button.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_borderless_background</item>
+    </style>
+
+    <style name="RobotoRegular">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PartialState" parent="RobotoRegular">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PartialState.PrimaryText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">48dp</item>
+        <item name="android:paddingRight">48dp</item>
+    </style>
+
+    <style name="PartialState.SecondaryText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>s
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+
+</resources>

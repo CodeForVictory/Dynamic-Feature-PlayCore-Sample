@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dynamic Feature Simple Sample</string>
+    <string name="feature_the_meg">the_meg</string>
+</resources>
